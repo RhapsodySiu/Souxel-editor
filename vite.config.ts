@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: '/Souxel-editor/',
+  base: mode === "development" ? "/" : "/Souxel-editor/",
   build: {
     outDir: 'dist',
   },
